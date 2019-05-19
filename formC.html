@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Karla:400,700|VT323" rel="stylesheet">
+    <style>
+        * {
+          background-color: #2c2c38; 
+          color: white;
+          font-family: 'Karla', sans-serif;
+          
+        }
+        h1 {
+          margin-top: 20px;
+          font-family: 'VT323', monospace;
+          font-size: 34px;
+        }
+        h2 {
+          margin-top: 30px;
+          font-family: 'VT323', monospace;
+          font-size: 26px;
+				}
+				h3 {
+          margin-top: 15px;
+          font-family: 'VT323', monospace;
+          font-size: 22px;
+        }
+        .btn {
+					width: 150px;
+					margin-top: 20px;
+          margin-left: 40%;
+          margin-bottom: 40px;
+          font-family: 'VT323', monospace;
+        }
+        .form-check {
+          margin-top: 20px;
+          padding-left: 5.25rem;
+        }
+        .form-check-input {
+          margin-left: -1.7rem;
+        }
+        
+        .form-check-label {
+          margin-left: 12px;
+        }
+
+        .form-row {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+      
+        input[type='radio']:after {
+        width:20px;
+        height:20px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #2c2c38 ;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        }
+
+        input[type='radio']:checked:after {
+            width:20px;
+            height: 20px;
+            border-radius: 50%;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #d1d3d1;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 4px solid white;
+        }
+
+      </style>
+
+		<!-- <div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<h1>Form C</h1>
+				</div>
+			</div> 
+		</div> -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          
+          <form method="POST" action="/formD">
+          
+            <div> 
+                <h1>Tell me more about your activity in those devices</h1>
+              <div>
+                <h2 style="color: #5685ea">How about Facebook?</h2>
+                <h3 style="color: #5685ea">In the past month, how much did you post on your facebook feed?</h3>
+                <div class="form-row">
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio1" value="fb1">
+                    <label class="form-check-label" for="inlineRadio1">I do not have a Facebook account</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio2" value="fb2">
+                    <label class="form-check-label" for="inlineRadio2">I have an account, but I never post</label>
+                  </div>
+                  <div class="form-check form-check-inline col ">
+                    <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio3" value="fb3">
+                    <label class="form-check-label" for="inlineRadio3">Less than 5 posts</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio4" value="fb4">
+                    <label class="form-check-label" for="inlineRadio4">More than 10</label>
+                  </div>
+                </div>
+                <h3 style="color: #5685ea">In the past month, how much did you RVSP to events?</h3>
+                <div class="form-row">
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="fb_events" id="inlineRadio6" value="fb6">
+                    <label class="form-check-label" for="inlineRadio6">I told you I DO NOT HAVE FACEBOOK</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="fb_events" id="inlineRadio7" value="fb7">
+                    <label class="form-check-label" for="inlineRadio7">I never RVSP to FB events</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="fb_events" id="inlineRadio8" value="fb8">
+                    <label class="form-check-label" for="inlineRadio8">I RSVP to at least 5 events</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="fb_events" id="inlineRadio9" value="fb9">
+                    <label class="form-check-label" for="inlineRadio9">I RSVP to more than 10 events</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div> 
+              <h2 style="color: #fa407e">Ok, so Facebook is so 2000... How about Instagram?</h2>
+              <div>
+                <h3 style="color: #fa407e">In the past month I have uploaded:</h3>
+                <div class="form-row">
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="instagram" id="inlineRadio10" value="in1">
+                    <label class="form-check-label" for="inlineRadio10">Nothing because I'm not on Instagram</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="instagram" id="inlineRadio11" value="in2">
+                    <label class="form-check-label" for="inlineRadio11">Nothing because I just like to watch</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="instagram" id="inlineRadio12" value="in3">
+                    <label class="form-check-label" for="inlineRadio12">About 3 pictures</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="instagram" id="inlineRadio13" value="in4">
+                    <label class="form-check-label" for="inlineRadio13">A new picture nearly every day</label>
+                  </div>
+                </div>  
+							</div>
+              <h3 style="color: #fa407e">In the past month I have posted:</h3>
+              <div class="form-row">
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="instagram_st" id="inlineRadio14" value="in5">
+                  <label class="form-check-label" for="inlineRadio14">Nothing because I DO NOT DO INSTAGRAM</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="instagram_st" id="inlineRadio15" value="in6">
+                  <label class="form-check-label" for="inlineRadio15">Nothing because I swipe through stories</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="instagram_st" id="inlineRadio15" value="in7">
+                  <label class="form-check-label" for="inlineRadio16">About 5 stories</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="instagram_st" id="inlineRadio17" value="in8">
+                  <label class="form-check-label" for="inlineRadio17">At least one story every day</label>
+                </div>
+              </div>  
+						</div>
+
+						<div> 
+							<h2 style="color: #1dcaff">Instagram is so milennial, I use Twitter</h2>
+							<div>
+                <h3 style="color: #1dcaff">Over the past month:</h3>
+                <div class="form-row">
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="twitter" id="inlineRadio18" value="tw1">
+                    <label class="form-check-label" for="inlineRadio18">What is twitter?</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="twitter" id="inlineRadio19" value="tw2">
+                    <label class="form-check-label" for="inlineRadio19">I'm an observer</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="twitter" id="inlineRadio20" value="tw3">
+                    <label class="form-check-label" for="inlineRadio20">I tweetted about 5 times</label>
+                  </div>
+                  <div class="form-check form-check-inline col">
+                    <input class="form-check-input" type="radio" name="twitter" id="inlineRadio21" value="tw4">
+                    <label class="form-check-label" for="inlineRadio21">I tweet nearly every day</label>
+                  </div>
+                </div>
+							</div>
+						</div>
+						<div>
+              <h3 style="color:#fce72a">How about any others (Snapchat, Qzone, Weibo, Tumblr, Flickr, etc.)</h3>
+              <div class="form-row">
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="other_platform" id="inlineRadio22" value="op1">
+                  <label class="form-check-label" for="inlineRadio22">I do not post things in any other platform</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="other_platform" id="inlineRadio23" value="op2">
+                  <label class="form-check-label" for="inlineRadio23">I use other platforms, but only to scroll</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="other_platform" id="inlineRadio24" value="op3">
+                  <label class="form-check-label" for="inlineRadio24">I use one other platform</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="other_platform" id="inlineRadio25" value="op4">
+                  <label class="form-check-label" for="inlineRadio25">I use many other platforms not listed</label>
+                </div>
+              </div>
+					</div>
+					<input  class="btn btn-success btn-lg" type="submit" value="Next"></input>
+          </form>
+				</div>	
+			</div>
+    </div>
+
+  </body>
+</html>
