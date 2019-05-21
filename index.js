@@ -20,34 +20,195 @@ app.get('/', function(req, res){
 
 app.post('/formB', function(req, res){
   res.sendFile(path.join(__dirname + '/formB.html'))
+  
 })
 
 app.post('/formE', function(req, res){
   res.sendFile(path.join(__dirname + '/formE.html'))
+  // aqui recibo las preguntas del anterior
+  let device = req.body.device
+    if(device == "smartphone") {
+      lifeExp += 5
+    }
+    else if (device == "smartwatch") {
+      lifeExp += 10
+    }
+    else if (device == "fitbit") {
+      lifeExp += 15
+    }
 })
 
 app.post('/formF', function(req, res){
   res.sendFile(path.join(__dirname + '/formF.html'))
+
+  let fb_a = req.body.fb_a
+    if(fb_a == "fb1"){
+      lifeExp += 1
+    }
+    else if (fb_a == "fb2") {
+      lifeExp += 5
+    }
+    else if (fb_a == "fb3") {
+      lifeExp += 10
+    }
+
+  let fb_b = req.body.fb_b
+    if (fb_b == "fb4") {
+      lifeExp += 1
+    }
+    else if (fb_b == "fb5") {
+      lifeExp += 5
+    }
+    else if (fb_b == "fb6") {
+      lifeExp += 10
+    }
+
 })
 
 app.post('/formG', function(req, res){
   res.sendFile(path.join(__dirname + '/formG.html'))
+
+  let in_a = req.body.in_a
+  if (in_a == "in1") {
+    lifeExp += 1
+  }
+  else if (in_a == "in2") {
+    lifeExp += 5
+  }
+  else if (in_a == "in3") {
+    lifeExp += 10
+  }
+
+let in_b = req.body.in_b
+  if (in_b == "in4") {
+    lifeExp += 1
+  }
+  else if (in_b == "in5") {
+    lifeExp += 7
+  }
+  else if (in_b == "in6") {
+    lifeExp += 18
+  }
+
 })
 
 app.post('/formH', function(req, res){
   res.sendFile(path.join(__dirname + '/formH.html'))
+
+  let tw_a = req.body.tw_a
+  if (tw_a == "tw1") {
+    lifeExp += 1
+  }
+  else if (tw_a == "tw2") {
+    lifeExp += 5
+  }
+  else if (tw_a == "tw3") {
+    lifeExp += 10
+  }
+
+  let tw_b = req.body.tw_b
+  if (tw_b == "tw4") {
+    lifeExp += 1
+  }
+  else if (tw_b == "tw5") {
+    lifeExp += 5
+  }
+  else if (tw_b == "tw6") {
+    lifeExp += 10
+  }
+
 })
 
 app.post('/formI', function(req, res){
   res.sendFile(path.join(__dirname + '/formI.html'))
+
+  let ot_a = req.body.ot_a
+  if (ot_a == "ot1") {
+    lifeExp += 1
+  }
+  else if (ot_a == "ot2") {
+    lifeExp += 5
+  }
+  else if (ot_a == "ot3") {
+    lifeExp += 10
+  }
+
 })
 
 app.post('/formJ', function(req, res){
   res.sendFile(path.join(__dirname + '/formJ.html'))
+
+  let hr_a = req.body.hr_a
+  if (hr_a == "hr1") {
+    lifeExp += 1
+  }
+  else if (hr_a == "hr2") {
+    lifeExp += 5
+  }
+  else if (hr_a == "hr3") {
+    lifeExp += 10
+  }
+
+  let hr_b = req.body.hr_b
+  if (hr_b == "hr4") {
+    lifeExp += 1
+  }
+  else if (hr_b == "hr5") {
+    lifeExp += 5
+  }
+  else if (hr_b == "hr6") {
+    lifeExp += 10
+  }
+
+  let hr_c = req.body.hr_c
+  if (hr_c == "hr7") {
+    lifeExp += 1
+  }
+  else if (hr_c == "hr8") {
+    lifeExp += 5
+  }
+  else if (hr_c == "hr9") {
+    lifeExp += 10
+  }
+
 })
 
 app.post('/formK', function(req, res){
   res.sendFile(path.join(__dirname + '/formK.html'))
+
+  let sl_a = req.body.sl_a
+  if (sl_a == "sl1") {
+    lifeExp += 1
+  }
+  else if (sl_a == "sl2") {
+    lifeExp += 5
+  }
+  else if (sl_a == "sl3") {
+    lifeExp += 10
+  }
+
+  let sl_b = req.body.sl_b
+  if (sl_b == "sl4") {
+    lifeExp += 1
+  }
+  else if (sl_b == "sl5") {
+    lifeExp += 5
+  }
+  else if (sl_b == "sl6") {
+    lifeExp += 10
+  }
+
+  let sl_c = req.body.sl_c
+  if (sl_c == "sl7") {
+    lifeExp += 1
+  }
+  else if (sl_c == "sl8") {
+    lifeExp += 5
+  }
+  else if (sl_c == "sl9") {
+    lifeExp += 10
+  }
+
 })
 
 app.post('/formC', function(req, res){
@@ -65,210 +226,38 @@ app.post('/result', function(req, res){
   //     lifeExp += 5
   //   }
 
-  let device = req.body.device
-    if(device == "smartphone") {
-      lifeExp += 5
-    }
-    else if (device == "smartwatch") {
-      lifeExp += 10
-    }
-    else if (device == "fitbit") {
-      lifeExp += 15
-    }
+  let mo_a = req.body.mo_a
+  if (mo_a == "mo1") {
+    lifeExp += 1
+  }
+  else if (mo_a == "mo2") {
+    lifeExp += 5
+  }
+  else if (mo_a == "mo3") {
+    lifeExp += 10
+  }
 
-  let fb_feed = req.body.fb_feed
-    if(fb_feed == "fb1"){
-      lifeExp += 0
-    }
-    else if (fb_feed == "fb2") {
-      lifeExp += 0
-    }
-    else if (fb_feed == "fb3") {
-      lifeExp += 10
-    }
-    else if (fb_feed == "fb4") {
-      lifeExp += 20
-    }
+  let mo_b = req.body.mo_b
+  if (mo_b == "mo4") {
+    lifeExp += 1
+  }
+  else if (mo_b == "mo5") {
+    lifeExp += 5
+  }
+  else if (mo_b == "mo6") {
+    lifeExp += 10
+  }
 
-  let fb_events = req.body.fb_events
-    if (fb_events == "fb6") {
-      lifeExp += 0
-    }
-    else if (fb_events == "fb7") {
-      lifeExp += 0
-    }
-    else if (fb_events == "fb8") {
-      lifeExp += 10
-    }
-    else if (fb_events == "fb9") {
-      lifeExp += 30
-    }
-
-  let instagram = req.body.instagram
-    if (instagram == "in1") {
-      lifeExp += 0
-    }
-    else if (instagram == "in2") {
-      lifeExp += 0
-    }
-    else if (instagram == "in3") {
-      lifeExp += 10
-    }
-    else if (instagram == "in4") {
-      lifeExp += 20
-    }
-
-  let instagram_st = req.body.instagram_st
-    if (instagram_st == "in5") {
-      lifeExp += 0
-    }
-    else if (instagram_st == "in6") {
-      lifeExp += 3
-    }
-    else if (instagram_st == "in7") {
-      lifeExp += 15
-    }
-    else if (instagram_st == "in8") {
-      lifeExp += 30
-    }
-
-  let twitter = req.body.twitter
-    if (twitter == "tw1") {
-      lifeExp += 0
-    }
-    else if (twitter == "tw2") {
-      lifeExp += 0
-    }
-    else if (twitter == "tw3") {
-      lifeExp += 10
-    }
-    else if (twitter == "tw4") {
-      lifeExp += 20
-    }
-
-  let other_platform = req.body.other_platform
-    if (other_platform == "op1") {
-      lifeExp += 0
-    }
-    else if (other_platform == "op2") {
-      lifeExp += 0
-    }
-    else if (other_platform == "op3") {
-      lifeExp += 8
-    }
-    else if (other_platform == "op4") {
-      lifeExp += 15
-    }
-
-  let sleep = req.body.sleep
-    if (sleep == "sp1") {
-      lifeExp += 0
-    }
-    else if (sleep == "sp2") {
-      lifeExp += 1
-    }
-    else if (sleep == "sp3") {
-      lifeExp += 10
-    }
-    else if (sleep == "sp4") {
-      lifeExp += 20
-    }
-
-  let calories = req.body.calories
-    if (calories == "c1") {
-      lifeExp += 0
-    }
-    else if (calories == "c2") {
-      lifeExp += 2
-    }
-    else if (calories == "c3") {
-      lifeExp += 15
-    }
-    else if (calories == "c4") {
-      lifeExp += 30
-    }
-
-  let weight = req.body.weight
-    if (weight == "w1") {
-      lifeExp += 0
-    }
-    else if (weight == "w2") {
-      lifeExp += 2
-    }
-    else if (weight == "w3") {
-      lifeExp += 15
-    }
-    else if (weight == "w4") {
-      lifeExp += 30
-    }
-
-  let coffee = req.body.coffee
-    if (coffee == "cf1") {
-      lifeExp += 0
-    }
-    else if (coffee == "cf2") {
-      lifeExp += 10
-    }
-
-  let water = req.body.water
-    if (water == "wt1") {
-      lifeExp += 0
-    }
-    else if (water == "wt2") {
-      lifeExp += 10
-    }
-
-  let other = req.body.other
-    if (other == "ot1") {
-      lifeExp += 0
-    }
-    else if (other == "ot2") {
-      lifeExp += 10
-    }
-
-  let steps = req.body.steps
-    if (steps == "sp1") {
-      lifeExp += 0
-    }
-    else if (steps == "sp2") {
-      lifeExp += 2
-    }
-    else if (steps == "sp3") {
-      lifeExp += 10
-    }
-    else if (steps == "sp4") {
-      lifeExp += 20
-    }
-
-  let heart = req.body.heart
-    if (heart == "h1") {
-      lifeExp += 0
-    }
-    else if (heart == "h2") {
-      lifeExp += 2
-    }
-    else if (heart == "h3") {
-      lifeExp += 10
-    }
-    else if (heart == "h4") {
-      lifeExp += 20
-    }
-
-  let mood = req.body.mood
-    if (mood == "m1") {
-      lifeExp += 0
-    }
-    else if (mood == "m2") {
-      lifeExp += 10
-    }
-
-  let prod = req.body.prod
-    if (prod == "p1") {
-      lifeExp += 0
-    }
-    else if (prod == "p2") {
-      lifeExp += 10
-    }
+  let mo_c = req.body.mo_c
+  if (mo_c == "mo7") {
+    lifeExp += 1
+  }
+  else if (mo_c == "mo8") {
+    lifeExp += 5
+  }
+  else if (mo_c == "mo9") {
+    lifeExp += 10
+  }
 
   console.log(lifeExp)
 
@@ -287,5 +276,5 @@ app.post('/result', function(req, res){
 
 
 app.listen(3000, function(){
-    console.log('Example app listening on port 3000!')
+    console.log('Live on port 3000!')
 })
