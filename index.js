@@ -22,6 +22,34 @@ app.post('/formB', function(req, res){
   res.sendFile(path.join(__dirname + '/formB.html'))
 })
 
+app.post('/formE', function(req, res){
+  res.sendFile(path.join(__dirname + '/formE.html'))
+})
+
+app.post('/formF', function(req, res){
+  res.sendFile(path.join(__dirname + '/formF.html'))
+})
+
+app.post('/formG', function(req, res){
+  res.sendFile(path.join(__dirname + '/formG.html'))
+})
+
+app.post('/formH', function(req, res){
+  res.sendFile(path.join(__dirname + '/formH.html'))
+})
+
+app.post('/formI', function(req, res){
+  res.sendFile(path.join(__dirname + '/formI.html'))
+})
+
+app.post('/formJ', function(req, res){
+  res.sendFile(path.join(__dirname + '/formJ.html'))
+})
+
+app.post('/formK', function(req, res){
+  res.sendFile(path.join(__dirname + '/formK.html'))
+})
+
 app.post('/formC', function(req, res){
   res.sendFile(path.join(__dirname + '/formC.html'))
 })
@@ -95,7 +123,7 @@ app.post('/result', function(req, res){
       lifeExp += 0
     }
     else if (instagram_st == "in6") {
-      lifeExp += 0
+      lifeExp += 3
     }
     else if (instagram_st == "in7") {
       lifeExp += 15

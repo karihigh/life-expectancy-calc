@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Karla:400,700|VT323" rel="stylesheet">
+    <style>
+        * {
+          background-color: #1e1e26;
+          color: white;
+          font-family: 'Karla', sans-serif;
+
+        }
+        h1 {
+          margin-top: 20px;
+          font-family: 'VT323', monospace;
+          font-size: 36px;
+          color: #1dcaff;
+        }
+        h2 {
+          margin-top: 30px;
+          font-family: 'VT323', monospace;
+          font-size: 28px;
+          color: #1dcaff;
+				}
+				h3 {
+          margin-top: 15px;
+          font-family: 'VT323', monospace;
+          font-size: 20px;
+          color: #ffc105;
+        }
+        label {
+          font-size: 18px;
+        }
+        .btn {
+					width: 150px;
+					margin-top: 20px;
+          margin-bottom: 40px;
+          font-family: 'VT323', monospace;
+          font-size: 24px;
+          color:#1e1e26;
+        }
+        .form-check {
+          margin-top: 20px;
+          padding-left: 5.25rem;
+        }
+        .form-check-input {
+          margin-left: -1.7rem;
+        }
+
+        .form-check-label {
+          margin-left: 12px;
+        }
+
+        .form-row {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+
+        input[type='radio']:after {
+        width:20px;
+        height:20px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #1e1e26;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        }
+
+        input[type='radio']:checked:after {
+            width:20px;
+            height: 20px;
+            border-radius: 50%;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #d1d3d1;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 4px solid white;
+        }
+
+      </style>
+
+    <div class="container-fluid">
+      <div class="row" style="margin-top: 4%;">
+        <div class="col-md-10 offset-md-1">
+
+          <form method="POST" action="/result">
+              <h2>In the past month, have you tracked your moods (happy, sad, angry, anxious, stresssed)?</h2>
+              <div class="form-row">
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio2" value="fb2">
+                  <label class="form-check-label" for="inlineRadio2">Never</label>
+                </div>
+                <div class="form-check form-check-inline col ">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio3" value="fb3">
+                  <label class="form-check-label" for="inlineRadio3">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio4" value="fb4">
+                  <label class="form-check-label" for="inlineRadio4">Always</label>
+                </div>
+              </div>
+              <h2>Do you keep track of your productivity (timing the amount of hours worked on a specific task)?</h2>
+              <div class="form-row">
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio2" value="fb2">
+                  <label class="form-check-label" for="inlineRadio2">Never</label>
+                </div>
+                <div class="form-check form-check-inline col ">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio3" value="fb3">
+                  <label class="form-check-label" for="inlineRadio3">Sometimes</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio4" value="fb4">
+                  <label class="form-check-label" for="inlineRadio4">Always</label>
+                </div>
+              </div>
+              <h2>Do you track something else not mentioned before?</h2>
+              <div class="form-row">
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio2" value="fb2">
+                  <label class="form-check-label" for="inlineRadio2">Nope</label>
+                </div>
+                <div class="form-check form-check-inline col ">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio3" value="fb3">
+                  <label class="form-check-label" for="inlineRadio3">Yes, one thing</label>
+                </div>
+                <div class="form-check form-check-inline col">
+                  <input class="form-check-input" type="radio" name="fb_feed" id="inlineRadio4" value="fb4">
+                  <label class="form-check-label" for="inlineRadio4">Yes, many other things</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 40px;">
+            <div class="col">
+              <input style="margin-left: 40%;" class="btn btn-danger btn-lg" type="submit" value="Submit"></input>
+            </div>
+          </div>
+
+          </form>
+				</div>
+			</div>
+    </div>
+
+  </body>
+</html>
