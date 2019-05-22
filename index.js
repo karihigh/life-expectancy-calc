@@ -43,24 +43,24 @@ app.post('/formF', function(req, res){
 
   let fb_a = req.body.fb_a
     if(fb_a == "fb1"){
-      lifeExp += 1
-    }
-    else if (fb_a == "fb2") {
       lifeExp += 5
     }
-    else if (fb_a == "fb3") {
+    else if (fb_a == "fb2") {
       lifeExp += 10
+    }
+    else if (fb_a == "fb3") {
+      lifeExp += 15
     }
 
   let fb_b = req.body.fb_b
     if (fb_b == "fb4") {
-      lifeExp += 1
-    }
-    else if (fb_b == "fb5") {
       lifeExp += 5
     }
-    else if (fb_b == "fb6") {
+    else if (fb_b == "fb5") {
       lifeExp += 10
+    }
+    else if (fb_b == "fb6") {
+      lifeExp += 15
     }
 
 })
@@ -70,24 +70,24 @@ app.post('/formG', function(req, res){
 
   let in_a = req.body.in_a
   if (in_a == "in1") {
-    lifeExp += 1
-  }
-  else if (in_a == "in2") {
     lifeExp += 5
   }
-  else if (in_a == "in3") {
+  else if (in_a == "in2") {
     lifeExp += 10
+  }
+  else if (in_a == "in3") {
+    lifeExp += 15
   }
 
 let in_b = req.body.in_b
   if (in_b == "in4") {
-    lifeExp += 1
+    lifeExp += 3
   }
   else if (in_b == "in5") {
-    lifeExp += 7
+    lifeExp += 10
   }
   else if (in_b == "in6") {
-    lifeExp += 18
+    lifeExp += 20
   }
 
 })
@@ -97,24 +97,24 @@ app.post('/formH', function(req, res){
 
   let tw_a = req.body.tw_a
   if (tw_a == "tw1") {
-    lifeExp += 1
+    lifeExp += 3
   }
   else if (tw_a == "tw2") {
-    lifeExp += 5
+    lifeExp += 10
   }
   else if (tw_a == "tw3") {
-    lifeExp += 10
+    lifeExp += 20
   }
 
   let tw_b = req.body.tw_b
   if (tw_b == "tw4") {
-    lifeExp += 1
+    lifeExp += 3
   }
   else if (tw_b == "tw5") {
-    lifeExp += 5
+    lifeExp += 10
   }
   else if (tw_b == "tw6") {
-    lifeExp += 10
+    lifeExp += 20
   }
 
 })
@@ -124,13 +124,13 @@ app.post('/formI', function(req, res){
 
   let ot_a = req.body.ot_a
   if (ot_a == "ot1") {
-    lifeExp += 1
-  }
-  else if (ot_a == "ot2") {
     lifeExp += 5
   }
-  else if (ot_a == "ot3") {
+  else if (ot_a == "ot2") {
     lifeExp += 10
+  }
+  else if (ot_a == "ot3") {
+    lifeExp += 20
   }
 
 })
@@ -140,35 +140,35 @@ app.post('/formJ', function(req, res){
 
   let hr_a = req.body.hr_a
   if (hr_a == "hr1") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (hr_a == "hr2") {
-    lifeExp += 5
+    lifeExp += 10
   }
   else if (hr_a == "hr3") {
-    lifeExp += 10
+    lifeExp += 15
   }
 
   let hr_b = req.body.hr_b
   if (hr_b == "hr4") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (hr_b == "hr5") {
-    lifeExp += 5
+    lifeExp += 15
   }
   else if (hr_b == "hr6") {
-    lifeExp += 10
+    lifeExp += 30
   }
 
   let hr_c = req.body.hr_c
   if (hr_c == "hr7") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (hr_c == "hr8") {
-    lifeExp += 5
+    lifeExp += 15
   }
   else if (hr_c == "hr9") {
-    lifeExp += 10
+    lifeExp += 20
   }
 
 })
@@ -178,35 +178,35 @@ app.post('/formK', function(req, res){
 
   let sl_a = req.body.sl_a
   if (sl_a == "sl1") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (sl_a == "sl2") {
-    lifeExp += 5
+    lifeExp += 10
   }
   else if (sl_a == "sl3") {
-    lifeExp += 10
+    lifeExp += 20
   }
 
   let sl_b = req.body.sl_b
   if (sl_b == "sl4") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (sl_b == "sl5") {
-    lifeExp += 5
+    lifeExp += 15
   }
   else if (sl_b == "sl6") {
-    lifeExp += 10
+    lifeExp += 30
   }
 
   let sl_c = req.body.sl_c
   if (sl_c == "sl7") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (sl_c == "sl8") {
-    lifeExp += 5
+    lifeExp += 15
   }
   else if (sl_c == "sl9") {
-    lifeExp += 10
+    lifeExp += 30
   }
 
 })
@@ -228,35 +228,35 @@ app.post('/result', function(req, res){
 
   let mo_a = req.body.mo_a
   if (mo_a == "mo1") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (mo_a == "mo2") {
-    lifeExp += 5
+    lifeExp += 10
   }
   else if (mo_a == "mo3") {
-    lifeExp += 10
+    lifeExp += 20
   }
 
   let mo_b = req.body.mo_b
   if (mo_b == "mo4") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (mo_b == "mo5") {
-    lifeExp += 5
+    lifeExp += 15
   }
   else if (mo_b == "mo6") {
-    lifeExp += 10
+    lifeExp += 30
   }
 
   let mo_c = req.body.mo_c
   if (mo_c == "mo7") {
-    lifeExp += 1
+    lifeExp += 0
   }
   else if (mo_c == "mo8") {
-    lifeExp += 5
+    lifeExp += 15
   }
   else if (mo_c == "mo9") {
-    lifeExp += 10
+    lifeExp += 20
   }
 
   console.log(lifeExp)
